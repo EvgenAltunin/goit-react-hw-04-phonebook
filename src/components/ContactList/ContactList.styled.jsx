@@ -41,9 +41,16 @@ export const ContactText = styled.p`
   display: flex;
   align-items: center;
   font-weight: 700;
+  min-width: 100px;
+  font-size: 14px;
 
-  @media screen and (min-width: 320px) {
-    min-width: 100px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-size: inherit;
+    min-width: 120px;
+  }
+  @media screen and  (min-width: 1200px) {
+    font-size: inherit;
+    min-width: 240px;
   }
 `;
 
