@@ -1,18 +1,22 @@
 import styled from 'styled-components'
 
 export const ContactEditor = styled.form`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 14px;
-    padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  padding: 16px;
+  width: 260px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+
+  @media screen and (min-width: 450px) {
     width: 300px;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 18px;
-`
+  }
+`;
 
 export const Lable = styled.label`
     font-weight: 700;
