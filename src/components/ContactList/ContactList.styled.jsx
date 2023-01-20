@@ -42,7 +42,7 @@ export const ContactText = styled.p`
   display: flex;
   align-items: center;
   font-weight: 700;
-  min-width: 100px;
+  min-width: 115px;
   font-size: 14px;
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
