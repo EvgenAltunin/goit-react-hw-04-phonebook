@@ -25,18 +25,19 @@ export const ContactsList = styled.ul`
 
 
 export const ContactItem = styled.li`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
 
-    :nth-child(2n + 1) {
-        background-color: ${props => props.theme.colors.itemBackgroundColorGrey};;
-    }
-    
-`
+  :nth-child(2n + 1) {
+    background-color: ${props => props.theme.colors.itemBackgroundColorGrey};
+  }
+
+  @media screen and (min-width: 450px) {
+    padding: 8px 16px 8px 16px;
+  }
+`;
 export const ContactText = styled.p`
   display: flex;
   align-items: center;
@@ -74,3 +75,4 @@ export const ContactButton = styled.button`
         color: ${props => props.theme.colors.text};
     }
 `
+
