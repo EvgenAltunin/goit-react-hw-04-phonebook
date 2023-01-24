@@ -62,7 +62,7 @@ export default function App() {
     );
 
     if (isContactNameInContactsList) {
-      toast.error(`${newContactData.name} is already in contacts!`, {
+      toast.warning(`${newContactData.name} is already in contacts!`, {
         notificationParams,
       });
     } else {
